@@ -1,0 +1,1023 @@
+
+/*For All pages*/
+*
+{
+    text-align: center;
+    font-family:cursive;
+}
+
+body
+{
+    padding-top: 80px; 
+}
+
+
+header
+{
+    z-index: 1000;
+    overflow: hidden;
+    background-color: midnightblue;
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+     padding: 0px 200;
+}
+
+
+
+header a 
+{
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+
+
+
+
+
+button:hover
+{
+  background: goldenrod;
+}
+
+
+h2,h3,p
+{
+    color: midnightblue;
+}
+
+
+footer p 
+{
+    color: midnightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animation download for All Pages*/
+:root 
+{
+    --EASE_INOUT_QUAD: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --EASE_IN_QUAD: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --EASE_OUT_QUAD: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --COLOR_UI_PHARMACY: midnightblue;
+    --loaderPill_DURATION: 1800ms;
+    --loaderPill_SHOW_DURATION: 2s;
+
+}
+
+.animation
+{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showAndHide 3s ease-in-out forwards;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.loaderPill-anim
+{
+    height: 40px;
+}
+
+
+.loaderPill-anim-flop
+{
+    transform-origin: 50% 50%;
+    animation: loaderPillFlop var(--loaderPill_DURATION) linear infinite;
+}
+
+
+.loaderPill-pill
+{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--COLOR_UI_PHARMACY);
+    background-image: linear-gradient(to right, var(--COLOR_UI_PHARMACY) 50%, #ffffff 50%);
+}
+
+
+.loaderPill-text
+{
+    color: var(--COLOR_UI_PHARMACY);
+}
+
+
+@keyframes loaderPillBounce
+{
+
+0% 
+{
+    transform: translateY(123px);
+    animation-timing-function: var(--EASE_OUT_QUAD);
+}
+  
+25%
+{
+    transform: translateY(40px);
+    animation-timing-function: var(--EASE_IN_QUAD);
+}
+    
+50% 
+{
+    transform: translateY(120px);
+    animation-timing-function: var(--EASE_OUT_QUAD);
+}
+    
+75%
+{
+    transform: translateY(20px);
+    animation-timing-function: var(--EASE_IN_QUAD);
+}
+   
+100% 
+{
+    transform: translateY(120px);
+}
+
+}
+
+
+@keyframes loaderPillFlop 
+{
+
+0% 
+{
+    transform: rotate(0);
+}
+    
+25% 
+{
+    transform: rotate(90deg);
+}
+    
+50% 
+{
+    transform: rotate(180deg);
+}
+    
+75% 
+{
+    transform: rotate(450deg);
+}
+    
+100%
+{
+    transform: rotate(720deg);
+}
+
+}
+
+
+@keyframes loaderPillScale
+{
+    
+0%   
+{
+    transform: translateY(-15px) scale(1, 1);
+    animation-timing-function: var(--EASE_OUT_QUAD);
+}
+    
+25% 
+{
+    transform: translateY(-15px) scale(0.7, 1);
+    animation-timing-function: var(--EASE_IN_QUAD);
+}
+    
+50% 
+{
+    transform: translateY(-15px) scale(1, 1);
+    animation-timing-function: var(--EASE_OUT_QUAD);
+}
+    
+75% 
+{
+    transform: translateY(-15px) scale(0.6, 1);
+    animation-timing-function: var(--EASE_IN_QUAD);
+}
+    
+100%
+{
+    transform: translateY(-15px) scale(1, 1);
+}
+
+}
+
+
+@keyframes showAndHide
+{
+
+0% 
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+80%
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+100% 
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HomepagePage*/
+
+.Intro-icon p 
+{
+    color: midnightblue;
+    font-size:35px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login page for login form*/
+#myform1
+{
+    display: inline-block;
+    margin-top: 80px; 
+    padding: 20px;
+    margin-left:35% ;
+    flex-direction: column;
+    align-items: center;
+    color: midnightblue;
+    max-width: 400px;
+}
+
+#myform1 div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120%;
+    margin-bottom: 10px;
+}
+
+#myform1 h1
+{
+    margin-left: 47%;
+}
+
+
+#myform1 label
+{
+    width: 30%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#myform1 input,
+#myform1 select,
+#myform1 textarea,
+#myform1 button
+{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: midnightblue;
+    display: inline-block;
+}
+
+#myform1 input[type="submit"]
+{
+    margin-left: 32%;
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+
+
+#myform1 input[type="submit"]:hover
+{
+    background-color: goldenrod;
+}
+
+
+#msg1
+{
+    color: red;
+}
+
+.DontHaveAcc a 
+{
+    margin-left:40% ; 
+    cursor: pointer;
+    color: goldenrod;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login page for signup form*/
+
+
+#myform2
+{
+    display: inline-block;
+    margin-top: 80px; 
+    padding: 20px;
+    margin-left:35% ;
+    flex-direction: column;
+    align-items: center;
+    color: midnightblue;
+    max-width: 400px;
+}
+
+#myform2 div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120%;
+    margin-bottom: 10px;
+}
+
+#myform2 h1
+{
+    margin-left: 47%;
+}
+
+
+#myform2 label
+{
+    width: 30%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#myform2 input,
+#myform2 select,
+#myform2 textarea,
+#myform2 button
+{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: midnightblue;
+    display: inline-block;
+}
+
+#myform2 input[type="submit"]
+{
+    margin-left: 32%;
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+
+
+#myform2 input[type="submit"]:hover
+{
+    background-color: goldenrod;
+}
+
+
+#msg2
+{
+    color: red;
+}
+
+.HaveAcc a 
+{
+    margin-left:40% ; 
+    cursor: pointer;
+    color: goldenrod;
+
+}
+
+
+
+
+.Checker-sec
+{
+   margin-top: 80px; 
+  padding: 20px;
+  display: inline-block; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact-us page*/
+#myform
+{ 
+    padding-top: 40px;
+    margin-left: 35%;
+    flex-direction: column;
+    align-items: center;
+    color: midnightblue;
+    max-width: 400px;
+}
+
+#myform div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120%;
+    margin-bottom: 10px;
+}
+
+
+#myform label
+{
+    width: 30%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#myform input,
+#myform select,
+#myform textarea,
+#myform button
+{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: midnightblue;
+    display: inline-block;
+}
+
+#myform input[type="submit"],
+#myform input[type="reset"] 
+{
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+
+
+#myform input[type="submit"]:hover,
+#myform input[type="reset"]:hover
+{
+    background-color: goldenrod;
+}
+
+
+#msg
+{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* three Media Queries */
+
+/* 1-when the screen is small from 0 to 567 */
+
+@media (min-width: 0px) and (max-width: 567px)
+
+{
+body 
+{
+    padding-top: 40px;
+}
+
+header a
+{
+    font-size: 10px;
+}
+
+footer
+{
+    margin-top: 40px;
+}
+
+.Intro-icon P 
+{
+    font-size: 20PX;
+}
+
+
+
+.form h1
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.form input
+{
+    height: 50px;
+    width: 90%;
+    font-size: 14px;
+}
+
+
+
+.contact-form input,.contact-form select,.contact-form textarea
+{
+    width: 40%;
+}
+
+}
+
+
+/* 2-when the screen is meduim from 568 to 768 */
+
+@media (min-width: 568px) and (max-width: 768px) 
+
+{
+body
+{
+    padding-top: 50px;
+}
+
+header a
+{
+     font-size: 14px;
+}
+
+.Intro-icon P 
+{
+    font-size: 25PX;
+}
+
+
+    .form h1 {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .form input {
+        height: 55px;
+        width: 85%;
+        font-size: 16px;
+    }
+
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        width: 50%;
+    }
+}
+
+
+/* 3-when the screen is large from 768 to 992 */
+
+@media (min-width: 769px) and (max-width: 992px) 
+
+{
+
+
+ body {
+        padding-top: 70px;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    .form h1 {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .form input {
+        height: 58px;
+        width: 70%;
+        font-size: 18px;
+    }
+
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea 
+    {
+        width: 50%;
+    }
+
+
+
+}
+
+#userEmailContainer
+{
+    margin-right: 1600px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Med information*/
+
+.Title-Medicine-info 
+{
+
+    margin-top: 130px;
+    
+
+}
+
+
+.Medicine-info-search-button 
+{
+
+    color: white;
+    background-color: midnightblue;
+    border: none;
+
+    
+}
+
+
+.tag {
+    border: 1px solid black; 
+    padding: 5px;
+    margin: 10px 0; 
+    display: inline-block; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.tag:hover {
+    background-color: rgba(255, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*product page */
+
+.product-sec {
+  margin-top: 80px; 
+  padding: 20px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MyAccount page forms */
+#changeEmailForm,
+#changePasswordForm,
+#changeGenderForm,
+#cancelSubscriptionForm,
+#deleteAccountForm,
+#paymentMethod,
+#go-to-payment,
+#back-to-Accountinfo {
+    padding-top: 40px;
+    margin: 0 auto;  
+    color: midnightblue;
+    max-width: 400px;
+    width: 100%;
+}
+
+#changeEmailForm div,
+#changePasswordForm div,
+#changeGenderForm div,
+#cancelSubscriptionForm div,
+#deleteAccountForm div,
+#paymentMethod div,
+#go-to-payment div,
+#back-to-Accountinfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#changeEmailForm label,
+#changePasswordForm label,
+#changeGenderForm label,
+#paymentMethod label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#changeEmailForm input,
+#changePasswordForm input,
+#changeGenderForm select,
+#changeEmailForm button,
+#changePasswordForm button,
+#changeGenderForm button,
+#cancelSubscriptionForm button,
+#deleteAccountForm button,
+#paymentMethod input,
+#paymentMethod button,
+#go-to-payment button,
+#back-to-Accountinfo button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: midnightblue;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#changeEmailForm button,
+#changePasswordForm button,
+#changeGenderForm button,
+#paymentMethod button,
+#go-to-payment button,
+#back-to-Accountinfo button {
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+    width: auto;
+}
+
+#cancelSubscriptionForm button,
+#deleteAccountForm button,
+#go-to-payment button,
+#back-to-Accountinfo button {
+    width: 100%; 
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+#changeEmailForm button:hover,
+#changePasswordForm button:hover,
+#changeGenderForm button:hover,
+#cancelSubscriptionForm button:hover,
+#deleteAccountForm button:hover,
+#paymentMethod button:hover,
+#go-to-payment button:hover,
+#back-to-Accountinfo button:hover {
+    background-color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Active 
+{
+    background-color:goldenrod;
+}
+
+
+.Active-section
+{
+    border: solid midnightblue ;
+    border-radius: 20%;
+}
+
+
+
+
+
+/* cheker page */
+.Checker-info-search-button {
+    color: white;
+    background-color: midnightblue;
+    display: inline-block; /* This makes the button and input align side by side */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    cursor: pointer;
+}
+
+.checker-input {
+    display: inline-block; /* This makes the input align with the button */
+    padding: 10px;
+    margin-right: 10px; /* Adds some space between the input and button */
+    width: 200px; /* Adjust the width as needed */
+    border: 1px solid #ccc;
+}
+
+
+

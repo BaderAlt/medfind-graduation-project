@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleee.css">
+    <title>My Account</title>
+</head>
+<body>
+
+  <header>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Index.ejs">Homepage</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Login.ejs">Login</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medinfo.ejs">Medicine Information</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medicine-Intraction.ejs">Medicine Interaction</a> 
+    <a href="http://localhost:2000/intra">Medicine Interaction Cheacker</a> 
+    <a href="http://localhost:2000/product">Product Finder</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/contact-us.ejs">Contact-us</a> 
+
+    <div id="userEmailContainer">
+        <span id="userEmail"></span>
+        <button id="logoutButton">Log out</button>
+    </div>
+</header>
+
+
+
+    <!-- Account Information Section -->
+    <div class="Account-Information">
+        <div class="Title-Medicine-info">
+            <h1>Account Information</h1>
+        </div>
+
+
+
+        <!-- Change Email Section -->
+        <form id="changeEmailForm" method="POST" action="php/MyAccount.php">
+            <div>
+                <label for="email">Change Email:</label>
+                <input type="email" id="email" name="newEmail" placeholder="Enter your new email">
+                <button type="submit">Update Email</button>
+            </div>
+        </form>
+
+
+
+        <!-- Change Password Section -->
+        <form id="changePasswordForm" method="POST" action="php/MyAccount.php">
+            <div>
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" name="currentPassword" placeholder="Enter your current password">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Enter your new password">
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your new password">
+                <button type="submit">Update Password</button>
+            </div>
+        </form>
+
+
+
+        <!-- Change Gender Section -->
+        <form id="changeGenderForm" method="POST" action="php/MyAccount.php">
+            <div>
+                <label for="gender">Change Gender:</label>
+                <select id="gender" name="newGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button type="submit">Update Gender</button>
+            </div>
+        </form>
+
+
+
+        <!-- Delete Account Section -->
+        <form id="deleteAccountForm" method="POST" action="php/MyAccount.php">
+            <div>
+                <input type="hidden" name="deleteAccount" value="1">
+                <button type="submit" class="delete-account">Delete My Account</button>
+            </div>
+        </form>
+
+
+
+        <!-- Cancel Subscription Section -->
+        <form id="cancelSubscriptionForm" method="POST" action="php/MyAccount.php">
+            <div>
+                <input type="hidden" name="cancelSubscription" value="1">
+                <button type="submit" class="cancel-subscription">Cancel Subscription</button>
+            </div>
+        </form>
+
+
+
+        <!-- Button to go to Payment Method form -->
+        <form id="go-to-payment">
+            <div>
+                <button type="button" class="goTo-Payment">Go to Payment Method to Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Payment Method Section -->
+    <div class="Payment-Method">
+        <div class="Title-Medicine-info">
+            <h1>Payment Method</h1>
+        </div>
+
+        <!-- Payment Method -->
+        <form id="paymentMethod" method="POST" action="php/MyAccount.php">
+            <div>
+                <label for="cardName">Name on the Card:</label>
+                <input type="text" id="cardName" name="cardName" placeholder="Enter name on the card">
+            </div>
+            <div>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number">
+            </div>
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+            </div>
+            <div>
+                <label for="expiryDate">Expiry Date (MM/YY):</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+            </div>
+            <div>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </div>
+        </form>
+
+
+
+
+        <!-- Button to go back to Account Information -->
+        <form id="back-to-Accountinfo">
+            <div>
+                <button type="button" class="BackTo-Accountinfo">Back to Account Information</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+
+        <p>&copy;  Project Graduation. All rights reserved.</p>
+
+  </footer>
+
+    <script src="js/indexjs.js"></script>
+    <script src="js/MyAccount.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleee.css">
+    <title>Contact-us Page </title>
+</head>
+
+
+<body>
+	
+
+    <header>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Index.ejs">Homepage</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Login.ejs">Login</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medinfo.ejs">Medicine Information</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medicine-Intraction.ejs">Medicine Interaction</a> 
+    <a href="http://localhost:2000/intra">Medicine Interaction Cheacker</a> 
+    <a href="http://localhost:2000/product">Product Finder</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/contact-us.ejs"class="Active">Contact-us</a> 
+
+    <div id="userEmailContainer">
+        <span id="userEmail"></span>
+        <button id="logoutButton">Log out</button>
+    </div>
+</header>
+
+
+	<div class="animation">
+
+            <div class="loaderPill">
+
+            <div class="loaderPill-anim">
+
+            <div class="loaderPill-anim-bounce">
+
+            <div class="loaderPill-anim-flop">
+
+            <div class="loaderPill-pill">
+            	
+            </div>
+
+            </div>
+
+            </div>
+
+            </div>
+
+            <div class="loaderPill-floor">
+
+            <div class="loaderPill-floor-shadow"></div>
+
+            </div>
+
+            <h1 class="loaderPill-text">Contact-us</h1>
+
+            </div>
+
+
+    </div>
+
+
+
+		<form method="POST" action="php/processContactUs.php" autocomplete="on" id="myform" name="myform">
+
+              
+                
+              
+
+
+				<div>
+			    <label>First Name:</label>
+			    <input type="text" name="fname" id="first-name">
+                </div>
+
+
+                <div>
+			    <label>Last Name:</label>
+			    <input type="text" name="lname" id="last-name">
+                </div>
+
+
+                <div>
+			    <label>Gender:</label>
+			    <select name="gender" id="gender">
+			    <option value="Male">Male</option>
+			    <option value="Female">Female</option>
+			    </select>
+			    </div>
+
+
+                <div>
+			    <label>Mobile:</label>
+			    <input type="tel" name="mobile" id="mobile">
+                </div>
+
+
+                <div>
+			    <label>Date of Birth:</label>
+			    <input type="date" name="dateOfBirth" id="date-of-birth">
+                </div>
+
+                <div>
+			    <label>Email Address:</label>
+			    <input type="email" name="email" id="email">
+                </div>
+
+
+                <div>
+			    <label>Language of Communication:</label>
+                <select name="language" id="language">
+                <option value="Arabic">Arabic</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+                </select>
+                </div>
+
+
+                <div>
+			    <label>Details:</label>
+			    <textarea  name="message" id="details"></textarea>
+			    </div>
+
+
+                <div>
+                <p id="msg"></p>
+                </div>
+
+                <div>
+			    <input  type="submit" value="Send">
+                <input  type="reset" value="Clear">
+                </div>
+                 
+		</form>
+
+
+
+
+	<footer class="footcontact">
+
+        <p>&copy;  Project Graduation. All rights reserved.</p>
+
+	</footer>
+<script src="js/indexjs.js"></script>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styleee.css">
+  
+  <script src="scraping-frontend.js" defer></script>
+  <script src="js/header.js"></script>
+  <title>Product Search</title>
+</head>
+<body>
+ <header>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Index.ejs">Homepage</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Login.ejs">Login</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medinfo.ejs">Medicine Information</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medicine-Intraction.ejs">Medicine Interaction</a> 
+    <a href="http://localhost:2000/intra">Medicine Interaction Cheacker</a> 
+    <a href="http://localhost:2000/product"class="Active">Product Finder</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/contact-us.ejs">Contact-us</a> 
+
+    <div id="userEmailContainer">
+        <span id="userEmail"></span>
+        <button id="logoutButton">Log out</button>
+    </div>
+</header>
+
+
+ <div class="animation">
+
+            <div class="loaderPill">
+
+            <div class="loaderPill-anim">
+
+            <div class="loaderPill-anim-bounce">
+
+            <div class="loaderPill-anim-flop">
+
+            <div class="loaderPill-pill"></div>
+
+            </div>
+
+            </div>
+
+            </div>
+
+            <div class="loaderPill-floor">
+
+            <div class="loaderPill-floor-shadow"></div>
+
+            </div>
+
+            <h1 class="loaderPill-text">Product Finder</h1>
+
+            </div>
+
+    </div>
+
+
+  <main class="product-sec">
+    <h2>Medicine Finder</h2>
+    <form id="searchForm">
+      <input type="text" id="Product-name-in-medcine-finderr" name="name" placeholder="Enter product name" required>
+      <button  type="submit" class="Medicine-info-search-button">Search Product</button>
+      
+      <ol id="pharmacy-list"></ol>
+    </form>
+    <div class="results" id="results"></div>
+  </main>
+
+
+  <footer>
+    <p>&copy;  Project Graduation. All rights reserved.</p>
+  </footer>
+
+
+
+  <script src="js/indexjs.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAagSOpexoL3sVwuHN2T82enFijiMMIoNo&libraries=places" defer></script>
+</body>
+</html>

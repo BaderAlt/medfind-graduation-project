@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleee.css">
+
+    <title>Login page</title>
+
+</head>
+    
+<body>
+
+
+   <header>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Index.ejs">Homepage</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Login.ejs"class="Active">Login</a>
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medinfo.ejs">Medicine Information</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/Medicine-Intraction.ejs">Medicine Interaction</a> 
+    <a href="http://localhost:2000/intra">Medicine Interaction Cheacker</a> 
+    <a href="http://localhost:2000/product">Product Finder</a>  
+    <a href="http://localhost:344/PROJECT-GRADUATION-2/views/contact-us.ejs">Contact-us</a> 
+
+    <div id="userEmailContainer">
+        <span id="userEmail"></span>
+        <button id="logoutButton">Log out</button>
+    </div>
+</header>
+
+
+
+
+    <div class="animation">
+
+            <div class="loaderPill">
+
+            <div class="loaderPill-anim">
+
+            <div class="loaderPill-anim-bounce">
+
+            <div class="loaderPill-anim-flop">
+
+            <div class="loaderPill-pill"></div>
+
+            </div>
+
+            </div>
+
+            </div>
+
+            <div class="loaderPill-floor">
+
+            <div class="loaderPill-floor-shadow"></div>
+
+            </div>
+
+            <h1 class="loaderPill-text">Login</h1>
+
+            </div>
+
+    </div>
+  
+
+   
+<form method="POST" action="php/Login.php" autocomplete="on" class="logsection" id="myform1" name="myform01">
+
+             
+                <div>
+                <h1>Login</h1>
+                </div>
+
+                <div>
+                <label>Email:</label>
+                <input type="email" name="logemail" id="logemail">
+                </div>
+
+
+                <div>
+                <label>Password:</label>
+                <input type="Password" name="logpass" id="logpass">
+                </div>
+
+                <div>
+                <p id="msg1"></p>
+                </div>
+
+                <div>
+                <input type="submit" value="Login">
+                </div>
+
+                <div class="DontHaveAcc">
+                <a onclick="displaysgform()" type="Signup"> Do not have account ?</a>  
+                </div>
+            
+
+            
+                
+            
+
+        </form>
+    
+<form method="POST" action="php/Signup.php" autocomplete="on" class="sgsection" id="myform2" name="myform02">
+
+                <div>
+                <h1>Signup</h1>
+                </div>
+
+                <div>
+                <label>Email:</label>
+                <input type="email" name="sgemail" id="sgemail">
+                </div>
+
+                <div>
+                <label>Gender:</label>
+                <select name="sggender" id="sggender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                </select>
+                </div>
+
+                <div>
+                <label>Password:</label>
+                <input type="Password" name="sgpass" id="sgpass">
+                </div>
+
+                <div>
+                <label>Confirm Password:</label>
+                <input type="Password" name="connpass" id="connpass">
+                </div>
+
+                <div>
+                <p id="msg2"></p>
+                </div>
+
+                <div>
+                <input  type="submit" value="Singup">
+                </div>
+
+                 <div class="HaveAcc">
+                <a onclick="displaylogform()"> already have account ?</a>  
+                </div>
+</form>
+
+
+
+
+<footer>
+
+        <p>&copy;  Project Graduation. All rights reserved.</p>
+
+  </footer>
+
+<script src="js/login.js"></script>
+
+<script src="js/indexjs.js"></script>
+
+</body>
+</html>
