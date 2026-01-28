@@ -79,3 +79,7 @@ This ensured alignment with real-world enterprise software development practices
 ## 🎓 Project Type
 
 Graduation Project – Web-Based Healthcare Information System
+
+---
+
+© 2026 Bader Altalhi. This project was developed as a graduation project. Unauthorized commercial use is not permitted.
