@@ -58,6 +58,7 @@ System requirements, user flows, and backend processes were designed and validat
 
 - UML Use Case Diagrams
 - UML Sequence Diagrams
+- UML Class Diagram
 
 This ensured alignment with real-world enterprise software development practices.
 
